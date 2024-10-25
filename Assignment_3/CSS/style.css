@@ -11,11 +11,10 @@ body {
   max-width: 1100px;
 }
 .top-container {
-  margin: 35px 65px;
+  margin: 35px 45px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
 }
 header{
   width: 100%;
@@ -38,22 +37,23 @@ header .company-name{
 }
 .nav-bar .nav-1 {
   display: flex;
-  gap: 25px;
+  gap: 35px;
 }
 .nav-bar .nav-2 {
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 .nav-bar .nav-1 li a {
   text-decoration: none;
   color: #1E1E1E80;
+  font-size: 15px;
 }
 .nav-bar .nav-1 .f-c a:first-child{
     color: #1E1E1E;
 }
 .nav-bar .nav-2 li a img{
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 }
 .v-line1{
     width: 20px;
@@ -100,17 +100,18 @@ header .company-name{
   height: 75px;
 }
 .v-line2{
-  width: 64px;
+  width: 50px;
   height: 0px;
   border: 1px solid #1E1E1E;
   transform: rotate(90deg);
-  margin-top: 37px;
+  margin-top: 30px;
 }
 .content-1 .left-section .top .inner-container div p{
   color: #1E1E1E;
+  font-size: 15px;
 }
 .content-1 .left-section .top .inner-container div p:first-child{
-  font-size: 28px;
+  font-size: 25px;
 }
 .content-1 .left-section .btn-container .search-bar{
   width: 350px;
@@ -120,11 +121,11 @@ header .company-name{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px;
+  padding: 18px 5px 18px 10px;
 }
 .content-1 .left-section .btn-container .search-bar .img-container{
-  height: 40px;
-  width: 40px;
+  height: 38px;
+  width: 38px;
   background-color: #C1DCDC;
   border-radius: 20%;
   display: flex;
@@ -133,11 +134,11 @@ header .company-name{
 }
 .content-1 .left-section .btn-container .search-bar p{
   color: #1E1E1E80;
-
+  font-size: 15px;
 }
 .content-1 .left-section .btn-container .search-bar .img-container img {
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
 }
 .content-1 .right-section{
   width: 100%;
@@ -145,17 +146,17 @@ header .company-name{
 }
 .content-1 .right-section .container .arrow-bottom{
   height: 70px;
-  width: 140px;
+  width: 150px;
   position: absolute;
   top: 240px;
-  left: 20px;
+  left: 40px;
 }
 .content-1 .right-section .container .rectangle{
   height: 300px;
   width: 340px;
   background-color: #1E1E1E;
   position: absolute;
-  left: 170px;
+  left: 200px;
   top: 55px;
   border-top-left-radius: 145px;
   border-top-right-radius: 145px;
@@ -165,69 +166,71 @@ header .company-name{
   height: 380px;
   width: 310px;
   position: absolute;
-  left: 210px;
+  left: 240px;
   bottom: -45px;
 }
 .content-1 .right-section .container .arrow-top{
-  height: 130px;
+  height: 140px;
   width: 70px;
   position: absolute;
-  left: 470px;
+  left: 510px;
   top: -35px;
 }
 .content-2{
   display: flex;
-  gap: 30px;
+  gap: 40px;
   margin: 50px 0px;
 }
 .content-2 .left-section{
   height: 264px;
-  width: 230px;
+  width: 165px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
+  gap: 20px;
 }
 .content-2 .left-section div h2{
-  font-size: 25px;
+  font-size: 27px;
   line-height: 35px;
   font-weight: 700;
   color: #1E1E1E; 
 }
 .content-2 .left-section div p{
   margin-top: 10px;
-  line-height: 25px;
+  font-size: 15px;
+  line-height: 23px;
   color: #1E1E1E80;
 }
 .content-2 .left-section button{
   width: 130px;
-  height: 45px;
-  padding: 12px 24px;
+  height: 37px;
+  padding : 0px 25px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-color: #C1DCDC;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 .content-2 .left-section button p{
-  display: inline;
+  color: #1E1E1E;
 }
 .content-2 .left-section button img{
   height: 15px;
-  width: 20px;
+  width: 18px;
 }
 .content-2 .right-section{
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 .content-2 .right-section section{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 .content-2 .right-section section img{
-  height: 300px;
-  width: 299.33px;
+  height: 310px;
+  width: 242px;
   border-radius: 12px;
 }
 .content-2 .right-section section h3{
@@ -237,11 +240,12 @@ header .company-name{
 } 
 .content-2 .right-section section p{
   color: #1E1E1E80;
+  font-size: 15px;
 }
 .about-us{
   width: 100%s;
-  height: 512px;
-  padding: 0px 65px;
+  margin-bottom: 60px;
+  padding: 0px 45px;
 }
 .about-container{
   width: 100%;
@@ -257,6 +261,7 @@ header .company-name{
   text-align: center;
 }
 .about-header h2{
+  font-size: 27px;
   font-weight: 700;
   color: #1E1E1E;
   margin-bottom: 10px;
@@ -269,7 +274,7 @@ header .company-name{
 .about-main{
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 .about-main div{
   width: 100%;
@@ -278,7 +283,7 @@ header .company-name{
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 20px;
 }
 .about-main div .img-container{
   width: 80px;
@@ -299,41 +304,41 @@ header .company-name{
 }
 .about-main div p{
   color: #1E1E1E80;
-  font-size: 14px;
+  font-size: 15px;
 }
 .category{
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  gap: 60px;
   align-items: center;
 }
 .category-header{
   width: 400px;
   height: 80px;
   text-align: center;
-  margin-bottom: 95px;
 }
 .category-header h2{
+  font-size: 27px;
   font-weight: 700;
   color: #1E1E1E;
   margin-bottom: 10px;
 }
 .category-header p{
+  font-size: 15px;
   color: #1E1E1E80;
 }
 .category-main{
   width: 1100px;
-  height: 650px;
-  padding: 40px 65px;
+  height: 690px;
+  padding: 40px 45px;
   background-color: #C1DCDC;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
 }
 .category-main .content{
-  height: 400px;
-  width: 270px;
+  height: 420px;
+  width: 280px;
 }
 .category-main .content h3{
   font-size: 16px;
@@ -343,7 +348,7 @@ header .company-name{
 }
 .category-main .content p{
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   color: #1E1E1E80;
   margin: 10px; 
@@ -377,13 +382,13 @@ header .company-name{
 .comments{
   width: 100%;
   height: auto;
-  padding: 65px;
+  padding: 55px 45px;
 }
 .comments h2{
   width: 457px;
   height: 96px;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 27px;
   line-height: 40px;
   color: black;
   margin-bottom: 30px;
@@ -395,7 +400,7 @@ header .company-name{
   gap: 20px;
 }
 .comments .content div{
-  height: 260px;
+  height: 250px;
   width: 600px;
   background-color: #C1DCDC;
   border-radius: 10px;
@@ -426,10 +431,10 @@ header .company-name{
   color: #1E1E1E80;
 }
 footer{
-  margin-top: 140px;
+  margin-top: 100px;
   height: 310px;
   width: 100%;
-  padding: 65px;
+  padding: 45px;
   overflow: hidden;
   background-color: #C1DCDC;
 }
@@ -440,36 +445,36 @@ footer section{
 }
 footer section .left-container{
   width: 15%;
-  height: 90px;
+  height: 100px;
 }
 
 footer section .left-container .company-name{
   height: 14px;
-  width: 100px;
-  margin-bottom: 10px;
+  width: 95gitpx;
+  margin-bottom: 20px;
 }
 footer section .left-container p{
-  font-size: 15px;
-  line-height: 27px;
+  font-size: 14px;
+  line-height: 22px;
   color: #1E1E1E80;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 footer section .left-container .list{
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
   align-items: center;
 }
 footer section .left-container .list li{
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   border: 1px solid #1E1E1E80;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 6px;
 }
 footer section .left-container .list li a img{
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
 }
 footer section .right-container{
   width: 350px;
@@ -478,13 +483,13 @@ footer section .right-container{
   justify-content: space-between;
 }
 footer section .right-container .list li{
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 footer section .right-container .list li a{
   text-decoration: none;
   color: #1E1E1E80;
   font-weight: 400px;
-  font-size: 15px;
+  font-size: 14px;
 }
 footer section .right-container .list .f-c
 a:first-child{
@@ -494,6 +499,6 @@ a:first-child{
 }
 footer .copyright{
   color: #1E1E1E80;
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 50px;
 }
