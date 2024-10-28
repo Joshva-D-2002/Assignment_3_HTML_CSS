@@ -6,18 +6,13 @@
 body {
   font-family: "Poppins", serif;
   font-weight: 500;
-  max-width: 100%;
-}
-.full-container {
-  width: 100%;
-  max-width: 1440px;
-  margin: auto;
 }
 .top-container {
-  margin: 45px 96px;
+  margin: 2% 3%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: relative;
 }
 header {
   width: 100%;
@@ -26,8 +21,8 @@ header {
   align-items: center;
 }
 header .company-name {
-  height: 20px;
-  width: 130px;
+  height: 22px;
+  width: 12%;
 }
 .nav-bar {
   width: 100%;
@@ -55,8 +50,8 @@ header .company-name {
   color: #1e1e1e;
 }
 .nav-bar .nav-2 li a img {
-  width: 24px;
-  height: 24px;
+  width: 100%;
+  height: auto;
 }
 .v-line1 {
   width: 24px;
@@ -66,26 +61,26 @@ header .company-name {
 }
 .content-1 {
   height: 512px;
-  width: 1248px;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
   background-color: #c1dcdc;
-  padding: 45px 40px;
-  margin: 48px 0px;
+  padding: 3% 4%;
+  margin: 2% 0px;
   border-radius: 24px;
+  position: relative;
 }
 .content-1 .left-section {
   display: flex;
   flex-direction: column;
-  justify-content: start;
   gap: 48px;
+  float: left;
   height: auto;
+  width: 40%;
 }
 .content-1 .left-section .top {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  gap: 45px;
+  gap: 24px;
 }
 .content-1 .left-section .top h1 {
   font-size: 64px;
@@ -115,7 +110,7 @@ header .company-name {
   font-size: 32px;
 }
 .content-1 .left-section .btn-container .search-bar {
-  width: 449px;
+  width: 100%;
   height: 64px;
   border-radius: 12px;
   background-color: white;
@@ -142,45 +137,44 @@ header .company-name {
   width: 20px;
 }
 .content-1 .right-section {
-  width: 100%;
   position: relative;
 }
 .content-1 .right-section .container .arrow-bottom {
   height: 100px;
-  width: 180px;
+  width: 12%;
   position: absolute;
-  top: 290px;
-  left: 40px;
+  top: 270px;
+  left: 45%;
 }
 .content-1 .right-section .container .rectangle {
   height: 400px;
-  width: 450px;
+  width: 40%;
   background-color: #1e1e1e;
   position: absolute;
-  left: 230px;
-  top: 66px;
+  left: 58%;
+  top: 72px;
   border-top-left-radius: 200px;
   border-top-right-radius: 200px;
   border-bottom-left-radius: 200px;
 }
 .content-1 .right-section .container .plant-image {
-  height: 510px;
-  width: 410px;
+  width: 37%;
+  height: 513px;
   position: absolute;
-  left: 300px;
-  bottom: -45px;
+  left: 62%;
+  top: -40px;
 }
 .content-1 .right-section .container .arrow-top {
   height: 180px;
-  width: 90px;
+  width: 7%;
   position: absolute;
-  left: 650px;
+  left: 96%;
   top: -20px;
 }
 .content-2 {
   display: flex;
-  gap: 48px;
-  margin: 64px 0px;
+  justify-content: space-between;
+  margin: 2% 0px;
 }
 .content-2 .left-section {
   height: 264px;
@@ -222,8 +216,9 @@ header .company-name {
   width: 24px;
 }
 .content-2 .right-section {
+  width: 80%;
   display: flex;
-  gap: 48px;
+  justify-content: space-between;
 }
 .content-2 .right-section section {
   height: 436px;
@@ -233,7 +228,7 @@ header .company-name {
 }
 .content-2 .right-section section img {
   height: 363px;
-  width: 300px;
+  width: 100%;
   border-radius: 12px;
 }
 .content-2 .right-section section h3 {
@@ -248,7 +243,7 @@ header .company-name {
 .about-us {
   width: 100%;
   margin-bottom: 120px;
-  padding: 0px 96px;
+  padding: 0px 3%;
 }
 .about-container {
   width: 100%;
@@ -336,7 +331,7 @@ header .company-name {
 .category-main {
   width: 100%;
   height: 841px;
-  padding: 48px 96px;
+  padding: 2% 3%;
   background-color: #c1dcdc;
   display: flex;
   justify-content: space-between;
@@ -347,7 +342,7 @@ header .company-name {
 }
 .category-main .content img {
   height: 512px;
-  width: 352px;
+  width: 100%;
 }
 .category-main .content h3 {
   font-size: 18px;
@@ -392,7 +387,7 @@ header .company-name {
 .comments {
   width: 100%;
   height: auto;
-  padding: 96px;
+  padding: 3%;
 }
 .comments h2 {
   width: 457px;
@@ -405,13 +400,14 @@ header .company-name {
 }
 .comments .content {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  width: 100%;
   align-items: center;
   gap: 30px;
 }
 .comments .content div {
   height: 330px;
-  width: 613px;
+  width: 50%;
   background-color: #c1dcdc;
   border-radius: 12px;
   padding: 45px;
@@ -444,7 +440,7 @@ footer {
   margin-top: 100px;
   height: 400px;
   max-width: 100%;
-  padding: 48px 96px;
+  padding: 2% 3%;
   overflow: hidden;
   background-color: #c1dcdc;
 }
@@ -511,9 +507,9 @@ footer .copyright {
   margin-top: 90px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .top-container {
-    margin: 35px 45px;
+    margin: 1% 2%;
   }
   header .company-name {
     height: 17px;
@@ -540,14 +536,14 @@ footer .copyright {
     margin-top: 10px;
   }
   .content-1 {
-    height: 400px;
-    width: 100vw;
-    margin: 35px 0px;
-    padding: 45px 40px;
+    height: 380px;
+    width: 100%;
+    margin: 1% 0px;
+    padding: 2% 2%;
     border-radius: 24px;
   }
   .content-1 .left-section {
-    gap: 10px;
+    gap: 30px;
   }
   .content-1 .left-section .top {
     height: 227px;
@@ -573,7 +569,7 @@ footer .copyright {
     font-size: 25px;
   }
   .content-1 .left-section .btn-container .search-bar {
-    width: 350px;
+    width: 100%;
     height: 50px;
     border-radius: 12px;
     padding: 18px 5px 18px 10px;
@@ -591,31 +587,31 @@ footer .copyright {
     width: 16px;
   }
   .content-1 .right-section .container .arrow-bottom {
-    height: 70px;
-    width: 150px;
-    top: 240px;
-    left: 40px;
+    height: 50px;
+    width: 12%;
+    top: 260px;
+    left: 43%;
   }
   .content-1 .right-section .container .rectangle {
     height: 300px;
-    width: 340px;
-    left: 200px;
-    top: 55px;
+    width: 42%;
+    left: 54%;
+    top: 60px;
     border-top-left-radius: 145px;
     border-top-right-radius: 145px;
     border-bottom-left-radius: 145px;
   }
   .content-1 .right-section .container .plant-image {
     height: 380px;
-    width: 310px;
-    left: 240px;
-    bottom: -45px;
+    width: 37%;
+    left: 60%;
+    top: -20px;
   }
   .content-1 .right-section .container .arrow-top {
-    height: 140px;
-    width: 70px;
-    left: 510px;
-    top: -35px;
+    height: 120px;
+    width: 6%;
+    left: 95%;
+    top: 10px;
   }
   .content-2 {
     display: flex;
@@ -654,7 +650,7 @@ footer .copyright {
   }
   .content-2 .right-section section img {
     height: 310px;
-    width: 242px;
+    width: 100%;
     border-radius: 12px;
   }
   .content-2 .right-section section h3 {
@@ -721,7 +717,7 @@ footer .copyright {
   }
   .category-main {
     height: 690px;
-    padding: 40px 45px;
+    padding: 2% 2%;
   }
   .category-main .content {
     height: 600px;
@@ -729,7 +725,7 @@ footer .copyright {
   }
   .category-main .content img {
     height: 420px;
-    width: 280px;
+    width: 100%;
   }
   .category-main .content h3 {
     font-size: 16px;
@@ -757,7 +753,7 @@ footer .copyright {
     font-size: 15px;
   }
   .comments {
-    padding: 55px 45px;
+    padding: 2% 2%;
   }
   .comments h2 {
     width: 457px;
@@ -770,7 +766,7 @@ footer .copyright {
     gap: 20px;
   }
   .comments .content div {
-    height: 250px;
+    height: 270px;
     width: 600px;
     border-radius: 10px;
     padding: 30px;
@@ -797,11 +793,11 @@ footer .copyright {
   footer {
     margin-top: 100px;
     height: 310px;
-    padding: 45px;
+    max-width: 100%;
     overflow: hidden;
   }
   footer section .left-container {
-    width: 15%;
+    width: 20%;
     height: 100px;
   }
   footer section .left-container .company-name {
@@ -853,29 +849,51 @@ footer .copyright {
     margin-left: 1px;
     margin-top: 10px;
   }
-  .list {
-    list-style-type: none;
+  .nav-bar .nav-1 {
+    gap: 20px;
+  }
+  .nav-bar .nav-2 {
+    gap: 20px;
   }
   .content-1 {
-    width: 100vw;
-    height: 1000px;
-    flex-direction: column;
+    width: 100%;
+    height: 750px;
+  }
+  .content-1 .left-section {
+    gap: 30px;
+    float: none;
+    height: auto;
+    width: 100%;
+  }
+  .content-1 .left-section .top h1{
+    margin-top: 30px;
+    text-align: center;
+  }
+  .content-1 .left-section .top .inner-container {
+    width: 100%;
+    justify-content: space-evenly;
+    height: 75px;
   }
   .content-1 .right-section .container .arrow-bottom {
-    top: -200px;
-    left: -20px;
+    width: 20%;
+    height: 60px;
+    top: 250px;
+    left: 1%;
   }
   .content-1 .right-section .container .rectangle {
-    top: -255px;
-    left: 170px;
+    width: 60%;
+    top: 133px;
+    left: 23%;
   }
   .content-1 .right-section .container .plant-image {
-    left: 240px;
-    bottom: -45px;
+    width: 50%;
+    left: 30%;
+    top: 53px;
   }
   .content-1 .right-section .container .arrow-top {
-    left: 475px;
-    top: -360px;
+    width: 10%;
+    left: 85%;
+    top: 90px;
   }
   .content-2 {
     flex-direction: column;
@@ -883,6 +901,13 @@ footer .copyright {
   }
   .content-2 .right-section {
     flex-direction: column;
+  }
+  .content-2 .right-section section {
+    align-items: center;
+  }
+  .content-2 .right-section section img {
+    height: 350px;
+    width: 70%;
   }
   .about-main {
     flex-direction: column;
@@ -892,16 +917,54 @@ footer .copyright {
     flex-direction: column;
     align-items: center;
   }
+  .comments h2 {
+   width: 100%;
+  }
   .comments .content {
     flex-direction: column;
   }
+  .comments .content div {
+    width: 100%;
+  }
   footer {
-    height: 700px;
+    height: 600px;
     text-align: center;
   }
   footer section {
     flex-direction: column;
     align-items: center;
-    height: 400px;
+    height: 350px;
+  }
+  footer section .left-container{
+    width: 100%;
+  }
+  footer section .left-container .list{
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  .nav-bar {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .content-1 .left-section .btn-container .search-bar{
+    margin-top: 100px;
+  }
+  .content-1 {
+    margin-top: 15px;
+    width: 100%;
+    height: 850px;
+  }
+  header {
+    justify-content: center;
+  }
+  .category-header{
+    width: 100%;
+  }
+  footer{
+    height: 500px;
   }
 }
