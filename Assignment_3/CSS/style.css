@@ -63,7 +63,7 @@ header .company-name {
   height: 512px;
   width: 100%;
   background-color: #c1dcdc;
-  padding: 3% 4%;
+  padding: 4% 4%;
   margin: 2% 0px;
   border-radius: 24px;
   position: relative;
@@ -152,7 +152,7 @@ header .company-name {
   background-color: #1e1e1e;
   position: absolute;
   left: 58%;
-  top: 72px;
+  top: 59px;
   border-top-left-radius: 200px;
   border-top-right-radius: 200px;
   border-bottom-left-radius: 200px;
@@ -162,7 +162,7 @@ header .company-name {
   height: 513px;
   position: absolute;
   left: 62%;
-  top: -40px;
+  top: -54px;
 }
 .content-1 .right-section .container .arrow-top {
   height: 180px;
@@ -174,7 +174,7 @@ header .company-name {
 .content-2 {
   display: flex;
   justify-content: space-between;
-  margin: 2% 0px;
+  margin: 4% 0px;
 }
 .content-2 .left-section {
   height: 264px;
