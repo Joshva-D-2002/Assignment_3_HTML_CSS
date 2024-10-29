@@ -2,13 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-body {
   font-family: "Poppins", serif;
   font-weight: 500;
 }
+body {
+  zoom: 1;
+}
+.full-container {
+  height: 100vh;
+  min-width: 1440px;
+  min-height: auto;
+}
 .top-container {
-  margin: 2% 3%;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  padding: 0px 96px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -16,65 +25,60 @@ body {
 }
 header {
   width: 100%;
+  position: relative;
+}
+nav {
   display: flex;
-  justify-content: flex-start;
+  padding: 44px 0px;
+  gap: 10%;
   align-items: center;
 }
-header .company-name {
-  height: 22px;
-  width: 12%;
+nav .logo {
+  height: 20px;
+  width: 125px;
 }
-.nav-bar {
+nav .nav-links {
+  flex: 1;
+  text-align: right;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-left: 160px;
+  align-items: center;
 }
-.list {
-  list-style-type: none;
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
 }
-.nav-bar .nav-1 {
-  display: flex;
-  gap: 48px;
-}
-.nav-bar .nav-2 {
-  display: flex;
-  gap: 48px;
-}
-.nav-bar .nav-1 li a {
-  text-decoration: none;
+
+.nav-links .nav-1 li a {
   color: #1e1e1e80;
   font-size: 18px;
+  text-decoration: none;
 }
-.nav-bar .nav-1 .f-c a:first-child {
+.nav-links .nav-1 .f-c a:first-child {
   color: #1e1e1e;
-}
-.nav-bar .nav-2 li a img {
-  width: 100%;
-  height: auto;
 }
 .v-line1 {
   width: 24px;
   border: 1px solid #1e1e1e;
   transform: rotate(90deg);
-  margin-top: 12px;
+  margin-bottom: 7px;
 }
 .content-1 {
   height: 512px;
-  width: 100%;
+  max-width: 100%;
   background-color: #c1dcdc;
   padding: 4% 4%;
-  margin: 2% 0px;
   border-radius: 24px;
-  position: relative;
 }
 .content-1 .left-section {
   display: flex;
   flex-direction: column;
   gap: 48px;
   float: left;
-  height: auto;
-  width: 40%;
+  width: 512px;
+  height: 40%;
 }
 .content-1 .left-section .top {
   display: flex;
@@ -137,52 +141,64 @@ header .company-name {
   width: 20px;
 }
 .content-1 .right-section {
-  position: relative;
-}
-.content-1 .right-section .container .arrow-bottom {
-  height: 100px;
-  width: 12%;
-  position: absolute;
-  top: 270px;
-  left: 45%;
-}
-.content-1 .right-section .container .rectangle {
-  height: 400px;
-  width: 40%;
+  height: initial;
+  max-width: 60%;
   background-color: #1e1e1e;
-  position: absolute;
-  left: 58%;
-  top: 59px;
-  border-top-left-radius: 200px;
-  border-top-right-radius: 200px;
-  border-bottom-left-radius: 200px;
+  position: relative;
+  left: 40%;
 }
-.content-1 .right-section .container .plant-image {
-  width: 37%;
-  height: 513px;
+.content-1 .right-section .arrow-container1 {
+  height: auto;
+  width: 23%;
   position: absolute;
-  left: 62%;
-  top: -54px;
+  top: 267px;
+  left: 10%;
 }
-.content-1 .right-section .container .arrow-top {
-  height: 180px;
-  width: 7%;
+.content-1 .right-section .arrow-container1 img {
+  width: 100%;
+}
+.content-1 .right-section .arrow-container2 {
+  width: 11%;
   position: absolute;
-  left: 96%;
-  top: -20px;
+  top: -40px;
+  left: 92%;
+}
+.content-1 .right-section .arrow-container2 img {
+  width: 100%;
+}
+.content-1 .right-section .shape-container {
+  height: 400px;
+  width: 65.4%;
+  position: absolute;
+  left: 34%;
+  top: 73px;
+}
+.content-1 .right-section .shape-container img {
+  width: 100%;
+}
+.content-1 .right-section .plant-container {
+  width: 62%;
+  height: auto;
+  position: absolute;
+  left: 40%;
+  top: -51px;
+}
+.content-1 .right-section .plant-container img {
+  width: 100%;
 }
 .content-2 {
   display: flex;
-  justify-content: space-between;
-  margin: 4% 0px;
+  margin: 96px 0px;
 }
 .content-2 .left-section {
   height: 264px;
-  width: 200px;
+  width: 256px;
+  max-width: 100%;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 24px;
 }
 .content-2 .left-section div h2 {
   font-size: 32px;
@@ -218,17 +234,18 @@ header .company-name {
 .content-2 .right-section {
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  gap: 48px;
 }
 .content-2 .right-section section {
   height: 436px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 .content-2 .right-section section img {
-  height: 363px;
-  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
   border-radius: 12px;
 }
 .content-2 .right-section section h3 {
@@ -242,16 +259,17 @@ header .company-name {
 }
 .about-us {
   width: 100%;
-  margin-bottom: 120px;
-  padding: 0px 3%;
 }
 .about-container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 96px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 50px;
+  gap: 48px;
 }
 .about-header {
   height: 87px;
@@ -270,6 +288,7 @@ header .company-name {
   color: #1e1e1e80;
 }
 .about-main {
+  margin: 10px;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -281,7 +300,7 @@ header .company-name {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
 }
 .about-main div .img-container {
   width: 96px;
@@ -307,6 +326,7 @@ header .company-name {
   line-height: 27px;
 }
 .category {
+  margin-top: 96px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -328,13 +348,18 @@ header .company-name {
   font-size: 18px;
   color: #1e1e1e80;
 }
-.category-main {
-  width: 100%;
-  height: 841px;
-  padding: 2% 3%;
+.bg-color {
   background-color: #c1dcdc;
+  width: 100%;
+}
+.category-main {
+  margin: auto;
+  width: 1440px;
+  height: 841px;
+  padding: 48px 96px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 96px;
 }
 .category-main .content {
   height: 692px;
@@ -355,10 +380,10 @@ header .company-name {
   font-size: 18px;
   font-weight: 500;
   color: #1e1e1e80;
-  margin: 10px;
+  margin: 5px;
 }
 .category-main div .btn-container {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
 }
@@ -385,9 +410,10 @@ header .company-name {
   font-size: 18px;
 }
 .comments {
+  max-width: 1440px;
+  margin: auto;
+  padding: 96px;
   width: 100%;
-  height: auto;
-  padding: 3%;
 }
 .comments h2 {
   width: 457px;
@@ -436,18 +462,18 @@ header .company-name {
   font-size: 12px;
   color: #1e1e1e80;
 }
+
 footer {
-  margin-top: 100px;
+  margin: auto;
+  width: 1440px;
+  padding: 48px 96px;
   height: 400px;
-  max-width: 100%;
-  padding: 2% 3%;
   overflow: hidden;
-  background-color: #c1dcdc;
 }
 footer section {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
 }
 footer section .left-container {
   width: 192px;
@@ -470,6 +496,7 @@ footer section .left-container .list {
   align-items: center;
 }
 footer section .left-container .list li {
+  list-style: none;
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -489,6 +516,7 @@ footer section .right-container {
 }
 footer section .right-container .list li {
   margin-bottom: 24px;
+  list-style: none;
 }
 footer section .right-container .list li a {
   text-decoration: none;
@@ -506,358 +534,81 @@ footer .copyright {
   font-size: 18px;
   margin-top: 90px;
 }
-
-@media screen and (max-width: 1024px) {
-  .top-container {
-    margin: 1% 2%;
-  }
-  header .company-name {
-    height: 17px;
-    width: 110px;
-  }
-  .nav-bar {
-    margin-left: 80px;
-  }
-  .nav-bar .nav-1 {
-    gap: 35px;
-  }
-  .nav-bar .nav-2 {
-    gap: 40px;
-  }
-  .nav-bar .nav-1 li a {
-    font-size: 15px;
-  }
-  .nav-bar .nav-2 li a img {
-    width: 18px;
-    height: 18px;
-  }
-  .v-line1 {
-    width: 20px;
-    margin-top: 10px;
-  }
-  .content-1 {
-    height: 380px;
-    width: 100%;
-    margin: 1% 0px;
-    padding: 2% 2%;
-    border-radius: 24px;
-  }
-  .content-1 .left-section {
-    gap: 30px;
-  }
-  .content-1 .left-section .top {
-    height: 227px;
-    gap: 20px;
-  }
-  .content-1 .left-section .top h1 {
-    font-size: 50px;
-    line-height: 50px;
-  }
-  .content-1 .left-section .top .inner-container {
-    gap: 10px;
-    width: 300px;
-    height: 75px;
-  }
-  .v-line2 {
-    width: 50px;
-    margin-top: 30px;
-  }
-  .content-1 .left-section .top .inner-container div p {
-    font-size: 15px;
-  }
-  .content-1 .left-section .top .inner-container div p:first-child {
-    font-size: 25px;
-  }
-  .content-1 .left-section .btn-container .search-bar {
-    width: 100%;
-    height: 50px;
-    border-radius: 12px;
-    padding: 18px 5px 18px 10px;
-  }
-  .content-1 .left-section .btn-container .search-bar .img-container {
-    height: 38px;
-    width: 38px;
-    border-radius: 20%;
-  }
-  .content-1 .left-section .btn-container .search-bar p {
-    font-size: 15px;
-  }
-  .content-1 .left-section .btn-container .search-bar .img-container img {
-    height: 16px;
-    width: 16px;
-  }
-  .content-1 .right-section .container .arrow-bottom {
-    height: 50px;
-    width: 12%;
-    top: 260px;
-    left: 43%;
-  }
-  .content-1 .right-section .container .rectangle {
-    height: 300px;
-    width: 42%;
-    left: 54%;
-    top: 60px;
-    border-top-left-radius: 145px;
-    border-top-right-radius: 145px;
-    border-bottom-left-radius: 145px;
-  }
-  .content-1 .right-section .container .plant-image {
-    height: 380px;
-    width: 37%;
-    left: 60%;
-    top: -20px;
-  }
-  .content-1 .right-section .container .arrow-top {
-    height: 120px;
-    width: 6%;
-    left: 95%;
-    top: 10px;
-  }
-  .content-2 {
-    display: flex;
-    gap: 40px;
-    margin: 50px 0px;
-  }
-  .content-2 .left-section {
-    height: 264px;
-    width: 165px;
-    gap: 20px;
-  }
-  .content-2 .left-section div h2 {
-    font-size: 27px;
-    line-height: 35px;
-  }
-  .content-2 .left-section div p {
-    margin-top: 10px;
-    font-size: 15px;
-    line-height: 23px;
-  }
-  .content-2 .left-section button {
-    width: 130px;
-    height: 37px;
-    padding: 0px 25px;
-    border-radius: 8px;
-  }
-  .content-2 .left-section button img {
-    height: 15px;
-    width: 18px;
-  }
-  .content-2 .right-section {
-    gap: 40px;
-  }
-  .content-2 .right-section section {
-    gap: 12px;
-  }
-  .content-2 .right-section section img {
-    height: 310px;
-    width: 100%;
-    border-radius: 12px;
-  }
-  .content-2 .right-section section h3 {
-    font-size: 16px;
-  }
-  .content-2 .right-section section p {
-    font-size: 15px;
-  }
-  .about-us {
-    margin-bottom: 60px;
-    padding: 0px 45px;
-  }
-  .about-container {
-    gap: 40px;
-  }
-  .about-header {
-    height: 80px;
-    width: 400px;
-  }
-  .about-header h2 {
-    font-size: 27px;
-    margin-bottom: 10px;
-  }
-  .about-header p {
-    font-size: 15px;
-  }
-  .about-main {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  .about-main div {
-    height: 250px;
-    gap: 20px;
-  }
-  .about-main div .img-container {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-  }
-  .about-main div .img-container img {
-    width: 30px;
-    height: 30px;
-  }
-  .about-main div h3 {
-    font-size: 16px;
-  }
-  .about-main div p {
-    font-size: 15px;
-  }
-  .category {
-    gap: 60px;
-  }
-  .category-header {
-    width: 400px;
-    height: 80px;
-  }
-  .category-header h2 {
-    font-size: 27px;
-    margin-bottom: 10px;
-  }
-  .category-header p {
-    font-size: 15px;
-  }
-  .category-main {
-    height: 690px;
-    padding: 2% 2%;
-  }
-  .category-main .content {
-    height: 600px;
-    width: 280px;
-  }
-  .category-main .content img {
-    height: 420px;
-    width: 100%;
-  }
-  .category-main .content h3 {
-    font-size: 16px;
-    font-weight: 700;
-  }
-  .category-main .content p {
-    font-size: 15px;
-    font-weight: 500;
-    margin: 10px;
-  }
-  .category-main .content button {
-    margin-top: 10px;
-    height: 40px;
-    width: 125px;
-    padding: 12px 24px;
-    border-radius: 6px;
-  }
-  .category-main .content button img {
-    width: 25px;
-    height: 20px;
-    margin-left: 5px;
-  }
-  .category-main .content button span {
-    font-weight: 500;
-    font-size: 15px;
-  }
-  .comments {
-    padding: 2% 2%;
-  }
-  .comments h2 {
-    width: 457px;
-    height: 96px;
-    font-size: 27px;
-    line-height: 40px;
-    margin-bottom: 30px;
-  }
-  .comments .content {
-    gap: 20px;
-  }
-  .comments .content div {
-    height: 270px;
-    width: 600px;
-    border-radius: 10px;
-    padding: 30px;
-  }
-  .comments .content div img {
-    height: 25px;
-    width: 25px;
-  }
-  .comments .content div .comment {
-    margin-left: 35px;
-    line-height: 20px;
-    font-size: 14px;
-  }
-  .comments .content div .author {
-    margin-left: 35px;
-    margin-top: 20px;
-    font-size: 14px;
-  }
-  .comments .content div .source {
-    margin-left: 35px;
-    font-weight: 500;
-    font-size: 10px;
-  }
-  footer {
-    margin-top: 100px;
-    height: 310px;
-    max-width: 100%;
-    overflow: hidden;
-  }
-  footer section .left-container {
-    width: 20%;
-    height: 100px;
-  }
-  footer section .left-container .company-name {
-    height: 14px;
-    width: 95px;
-    margin-bottom: 20px;
-  }
-  footer section .left-container p {
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 15px;
-  }
-  footer section .left-container .list {
-    gap: 20px;
-  }
-  footer section .left-container .list li {
-    width: 35px;
-    height: 35px;
-    padding-top: 6px;
-  }
-  footer section .left-container .list li a img {
-    width: 14px;
-    height: 14px;
-  }
-  footer section .right-container {
-    width: 350px;
-    height: 150px;
-  }
-  footer section .right-container .list li {
-    margin-bottom: 10px;
-  }
-  footer section .right-container .list li a {
-    font-size: 14px;
-  }
-  footer section .right-container .list .f-c a:first-child {
-    font-weight: 700px;
-    font-size: 15px;
-  }
-  footer .copyright {
-    font-size: 14px;
-    margin-top: 50px;
+@media screen and (max-width: 1400px) {
+  body {
+    zoom: 0.97;
   }
 }
+@media screen and (max-width: 1350px) {
+  body {
+    zoom: 0.93;
+  }
+}
+@media screen and (max-width: 1300px) {
+  body {
+    zoom: 0.87;
+  }
+}
+@media screen and (max-width: 1250px) {
+  body {
+    zoom: 0.83;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body {
+    zoom: 0.79;
+  }
+}
+@media screen and (max-width: 1150px) {
+  body {
+    zoom: 0.75;
+  }
+}
+@media screen and (max-width: 1100px) {
+  body {
+    zoom: 0.70;
+  }
+}
+@media screen and (max-width: 1050px) {
+  body {
+    zoom: 0.67;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body {
+    zoom: 0.63;
+  }
+}
+@media screen and (max-width: 950px) {
+  body {
+    zoom: 0.60;
+  }
+}
+@media screen and (max-width: 900px) {
+  body {
+    zoom: 0.55;
+  }
+}
+@media screen and (max-width: 850px) {
+  body {
+    zoom: 0.53;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    zoom: 0.51;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  header {
-    flex-wrap: wrap;
-  }
-  .nav-bar {
-    margin-left: 1px;
-    margin-top: 10px;
-  }
-  .nav-bar .nav-1 {
-    gap: 20px;
-  }
-  .nav-bar .nav-2 {
-    gap: 20px;
+  .full-container {
+    height: 768px;
+    min-width: 100vw;
+    min-height: auto;
   }
   .content-1 {
     width: 100%;
-    height: 750px;
+    height: 900px;
   }
   .content-1 .left-section {
     gap: 30px;
@@ -865,7 +616,7 @@ footer .copyright {
     height: auto;
     width: 100%;
   }
-  .content-1 .left-section .top h1{
+  .content-1 .left-section .top h1 {
     margin-top: 30px;
     text-align: center;
   }
@@ -874,26 +625,13 @@ footer .copyright {
     justify-content: space-evenly;
     height: 75px;
   }
-  .content-1 .right-section .container .arrow-bottom {
-    width: 20%;
-    height: 60px;
-    top: 250px;
-    left: 1%;
+  .content-1 .right-section {
+    left: 10%;
+    top: 100px
   }
-  .content-1 .right-section .container .rectangle {
-    width: 60%;
-    top: 133px;
-    left: 23%;
-  }
-  .content-1 .right-section .container .plant-image {
-    width: 50%;
-    left: 30%;
-    top: 53px;
-  }
-  .content-1 .right-section .container .arrow-top {
-    width: 10%;
-    left: 85%;
-    top: 90px;
+  .content-1 .right-section .shape-container img {
+    max-width: 100%;
+    max-height: 100%;
   }
   .content-2 {
     flex-direction: column;
@@ -901,6 +639,7 @@ footer .copyright {
   }
   .content-2 .right-section {
     flex-direction: column;
+    align-items: center;
   }
   .content-2 .right-section section {
     align-items: center;
@@ -913,84 +652,46 @@ footer .copyright {
     flex-direction: column;
   }
   .category-main {
-    height: 2000px;
+    margin: auto;
+    width: 100%;
+    height: 2200px;
     flex-direction: column;
     align-items: center;
+    gap: 96px;
+  }
+  .category-main .content img {
+    max-height: 80%;
+    max-width: 100%;
+  }
+  .comments{
+    height: auto;
   }
   .comments h2 {
-   width: 100%;
+    width: 100%;
   }
   .comments .content {
     flex-direction: column;
   }
   .comments .content div {
+    height: auto;
     width: 100%;
   }
   footer {
-    height: 700px;
+    height: auto;
     text-align: center;
+    width: 100%;
   }
   footer section {
     flex-direction: column;
     align-items: center;
-    height: 350px;
+    height: auto;
   }
-  footer section .left-container{
+  footer section .left-container {
     width: 100%;
   }
-  footer section .left-container .list{
+  footer section .left-container .list {
     width: 100%;
     gap: 20px;
     justify-content: center;
-  }
-}
-@media screen and (max-width: 425px) {
-  .nav-bar {
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .content-1 .left-section .btn-container .search-bar{
-    margin-top: 100px;
-  }
-  .content-1 {
-    margin-top: 15px;
-    width: 100%;
-    height: 850px;
-  }
-  .about-header{
-    width: 100%;
-  }
-  header {
-    justify-content: center;
-  }
-  .category-header{
-    width: 100%;
-  }
-  footer{
-    height: 500px;
-  }
-}
-@media screen and (min-width: 2560px){
-  .content-1 .right-section .container .arrow-bottom {
-    width: 15%;
-    height: 100px;
-    top: 200px;
-    left: 45%;
-  }
-  .content-1 .right-section .container .rectangle {
-    width: 40%;
-    top: 15px;
-    left: 60%;
-  }
-  .content-1 .right-section .container .plant-image {
-    width: 40%;
-    left: 63%;
-    top: -100px;
-  }
-  .content-1 .right-section .container .arrow-top {
-    width: 6%;
-    left: 98%;
-    top: -55px;
   }
 }
