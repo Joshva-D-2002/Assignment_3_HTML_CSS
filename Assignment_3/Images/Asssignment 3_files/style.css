@@ -610,7 +610,7 @@ footer .copyright {
     min-height: auto;
   }
   .top-container{
-    padding: 15px;
+    padding: 10px;
   }
   nav{
     flex-direction: column;
@@ -658,13 +658,9 @@ footer .copyright {
     align-items: center;
   }
   .content-2 .left-section{
-    min-width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-  }
-  .content-2 .left-section button {
-    width: inherit;
   }
   .content-2 .right-section {
     flex-direction: column;
@@ -678,7 +674,7 @@ footer .copyright {
     width: 100%;
   }
   .about-container {
-    padding: 15px;
+    padding: 40px;
   }
   .about-main {
     flex-direction: column;
@@ -686,10 +682,11 @@ footer .copyright {
   .category-main {
     margin: auto;
     width: 100%;
-    padding: 15px;
+    padding: 40px;
     height: 2200px;
     flex-direction: column;
     align-items: center;
+    gap: 96px;
   }
   .category-main .content img {
     max-height: 80%;
@@ -697,7 +694,7 @@ footer .copyright {
   }
   .comments{
     height: auto;
-    padding: 15px;
+    padding: 40px;
   }
   .comments h2 {
     width: 100%;
@@ -713,7 +710,7 @@ footer .copyright {
     height: auto;
     text-align: center;
     width: 100%;
-    padding: 15px;
+    padding: 40px;
   }
   footer section {
     flex-direction: column;
@@ -736,54 +733,21 @@ footer .copyright {
 }
 @media screen and (max-width:700px) {
   body{
-    zoom: 0.92;
+    zoom: 0.95;
   }
 }
 @media screen and (max-width:670px) {
   body{
-    zoom: 0.87;
+    zoom: 0.93;
   }
 }
 @media screen and (max-width:640px) {
   body{
-    zoom: 0.84;
+    zoom: 0.91;
   }
 }
 @media screen and (max-width:600px) {
   body{
-    zoom: 0.79;
-  }
-}
-@media screen and (max-width:560px) {
-  body{
-    zoom: 0.74;
-  }
-}
-@media screen and (max-width:520px) {
-  body{
-    zoom: 0.70;
-  }
-}
-@media screen and (max-width:480px) {
-  body{
-    zoom: 0.63;
-  }
-}
-@media screen and (max-width:451px) {
-  .content-1 .right-section .arrow-container1 {
-    top: 320px;
-    left: -40%;
-  }
-  .content-1 .right-section .arrow-container2 {
-    top: 180px;
-    left: 50%;
-  }
-  .content-1 .right-section .shape-container {
-    left: -12%;
-    top: 207px;
-  }
-  .content-1 .right-section .plant-container {
-    left: -7%;
-    top: 140px;
+    zoom: 0.87;
   }
 }
