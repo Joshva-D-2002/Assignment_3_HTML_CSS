@@ -659,12 +659,13 @@ footer .copyright {
   }
   .content-2 .left-section{
     min-width: 100%;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    gap: 30px;
+    height: auto;
+    margin-bottom: 40px;
   }
-  .content-2 .left-section button {
-    width: inherit;
+  .content-2 .left-section div h2{
+    text-align: center;
   }
   .content-2 .right-section {
     flex-direction: column;
@@ -672,28 +673,42 @@ footer .copyright {
   }
   .content-2 .right-section section {
     align-items: center;
+    width: 100%;
+    height: 100%;
   }
   .content-2 .right-section section img {
-    height: 350px;
-    width: 100%;
+    width: inherit;
+    height: inherit;
   }
   .about-container {
     padding: 15px;
+    width: 85%;
   }
   .about-main {
     flex-direction: column;
+  }
+  .category{
+    margin-top: 20px;
+    gap: 30px;
   }
   .category-main {
     margin: auto;
     width: 100%;
     padding: 15px;
-    height: 2200px;
+    height: auto;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .category-main .content{
+    margin: auto;
+    height: 85%;
+    width: 85%;
   }
   .category-main .content img {
-    max-height: 80%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
   }
   .comments{
     height: auto;
@@ -701,6 +716,8 @@ footer .copyright {
   }
   .comments h2 {
     width: 100%;
+    text-align: center;
+    margin-top: 20px;
   }
   .comments .content {
     flex-direction: column;
@@ -711,7 +728,6 @@ footer .copyright {
   }
   footer {
     height: auto;
-    text-align: center;
     width: 100%;
     padding: 15px;
   }
@@ -719,14 +735,19 @@ footer .copyright {
     flex-direction: column;
     align-items: center;
     height: auto;
+    gap: 20px;
   }
   footer section .left-container {
     width: 100%;
+    text-align: center;
   }
   footer section .left-container .list {
     width: 100%;
-    gap: 20px;
+    gap: 50px;
     justify-content: center;
+  }
+  footer .copyright {
+    text-align: center;
   }
 }
 @media screen and (max-width:730px) {
