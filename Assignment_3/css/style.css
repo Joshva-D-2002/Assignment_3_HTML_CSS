@@ -230,7 +230,7 @@ nav .nav-links {
   border: none;
   border-radius: 8px;
 }
-.content-2 .left-section button p {
+.content-2 .left-section button span {
   font-size: 18px;
   color: #1e1e1e;
 }
