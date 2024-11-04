@@ -798,6 +798,7 @@ footer .copyright {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    padding: 15px 0px;
   }
   .nav-links .nav-1 li a{
     display: none;
